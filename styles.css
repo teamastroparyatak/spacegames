@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+.destination-selection {
+  margin-top: 20px;
+}
+
+button {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.game-container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background-color: #111;
+  border: 2px solid #fff;
+  overflow: hidden; /* Prevent obstacles from overflowing */
+  position: relative; /* Add this for z-index */
+}
+
+.rocket {
+  position: absolute;
+  width: 50px; /* Adjust the width and height according to your image size */
+  height: 50px;
+  background-image: url("rocket.png"); /* Replace 'rocket.png' with your image file */
+  background-size: cover; /* Adjust this according to your image aspect ratio */
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.obstacle {
+  position: absolute;
+  width: 50px; /* Adjust the width and height according to your image size */
+  height: 50px;
+  background-image: url("asteriod.png"); /* Replace 'asteroid.png' with your asteroid image file */
+  background-size: cover; /* Adjust this according to your image aspect ratio */
+  display: none;
+}
+
+.score {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 18px;
+  z-index: 1; /* Ensure score is displayed above everything */
+}
+
+/* Add a CSS class to hide destination buttons */
+.hidden {
+  display: none;
+}

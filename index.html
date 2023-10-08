@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Adventure</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body style="background-image: url('space.png')">
+    <!-- Update the destination-selection section -->
+    <div class="destination-selection">
+      <button id="moon-button" class="destination-button">
+        Travel to the Moon
+      </button>
+      <button id="mars-button" class="destination-button">
+        Travel to Mars
+      </button>
+      <button id="restart-button">Restart</button>
+      <!-- Add the Restart button -->
+    </div>
+    <div class="game-container">
+      <div class="rocket"></div>
+      <div class="score">Score: <span id="score">0</span></div>
+      <div class="message" id="message"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
